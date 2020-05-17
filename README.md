@@ -1,2 +1,1 @@
 # kakao-talk-v2
- 
