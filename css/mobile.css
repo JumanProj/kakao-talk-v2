@@ -86,12 +86,12 @@
 @media screen and (min-width: 555px) and (max-width: 560px) {
     .bigScreen {
         display: flex;
-        opacity: 0.55;
+        opacity: 0.3;
     }
 }
 @media screen and (min-width: 550px) and (max-width: 555px) {
     .bigScreen {
         display: flex;
-        opacity: 0.5;
+        opacity: 0.1;
     }
 }
