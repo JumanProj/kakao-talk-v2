@@ -19,6 +19,7 @@
 
 ::-webkit-scrollbar {
     background: none;
+    width: 0px;
 }
 
 body {
