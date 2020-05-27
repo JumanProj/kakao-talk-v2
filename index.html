@@ -37,26 +37,38 @@
                 <span class="header__icon">
                     <i class="far fa-comment"></i>
                 </span>
-                <span class="header__icon">
+                <input type="checkbox" id="header__chats-setting" checked="checked" />
+                <label for="header__chats-setting" class="header__icon">
                     <i class="fas fa-cog"></i>
                     <!--  <i class="fas fa-cog fa-5x"></i> size 5x  -->
-                </span>
+                </label>
+                <div class="header__settings">
+                    <span>Edit</span>
+                    <span>Sorting</span>
+                    <a href="settings.html">
+                        <span>General Setting</span>
+                    </a>
+                </div>
             </div>
         </header>
         <main class="chats">
-            <ul class="chats_list">
-                <li class="chats_chat chat">
+            <ul class="chats__list">
+                <li class="chats__chat chat">
                     <a href="chat.html">
                         <div class="chats__chat friend">
                             <div class="friend__column">
-                                <img src="img/avatar1.jpg" class="m-avatar friend__avatar" />
-                                <div class="friend__content">
-                                    <span class="friend__name">
-                                        Kevin
-                                    </span>
-                                    <span class="friend__bottom-text">
-                                        Welcome to the Code Jungle!
-                                    </span>
+                                <div class="friend__container">
+                                    <img src="img/avatar2.jpg" class="m-avatar friend__avatar" />
+                                    <div class="friend__text-box">
+                                        <div class="friend__content">
+                                            <span class="friend__name">
+                                                Corinne Kutz
+                                            </span>
+                                        </div>
+                                        <span class="friend__bottom-text">
+                                            Thank you see you soon!
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                             <div class="friend__column">
@@ -65,21 +77,54 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="chat__column">
-                            <img src="img/avatar1.jpg" class="chat__avatar g-avatar" />
-                            <div class="chat__content">
-                                <span class="chat__username">
-                                    Lynn
-                                </span>
-                                <span class="chat__participants">3</span>
-                                <span class="chat__alarm-off">
-                                    <i class="fas fa-bell-slash"></i>
-                                </span>
-                                <span class="chat__preview">Going home!</span>
+                    </a>
+                </li>
+                <li class="chats__chat chat">
+                    <a href="chat.html">
+                        <div class="chats__chat friend">
+                            <div class="friend__column">
+                                <div class="friend__container">
+                                    <div class="friend__group">
+                                        <img
+                                            src="img/avatar3.jpg"
+                                            class="m-avatar friend__avatar"
+                                        />
+                                        <img
+                                            src="img/avatar4.jpg"
+                                            class="m-avatar friend__avatar"
+                                        />
+                                        <img
+                                            src="img/avatar6.jpg"
+                                            class="m-avatar friend__avatar"
+                                        />
+                                        <img
+                                            src="img/avatar7.jpg"
+                                            class="m-avatar friend__avatar"
+                                        />
+                                    </div>
+                                    <div class="friend__text-box">
+                                        <div class="friend__content">
+                                            <span class="friend__name">
+                                                Adriane, Brian, Dylann Hendricks, Shawn Pang
+                                            </span>
+                                            <span class="friend__participants">5</span>
+                                            <span class="friend__alarm-off">
+                                                <i class="fas fa-bell-slash"></i>
+                                            </span>
+                                        </div>
+                                        <span class="friend__bottom-text"
+                                            >Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit. Cumque aut in, neque magnam voluptatum vitae
+                                            facilis delectus voluptates doloremque molestias, error
+                                            velit autem nihil! Facilis necessitatibus error
+                                            reiciendis voluptas tempora.</span
+                                        >
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="chat__column">
-                            <span class="chat__timestamp">Yesterday</span>
+                            <div class="friend__column">
+                                <span class="chat__timestamp">Yesterday</span>
+                            </div>
                         </div>
                     </a>
                 </li>

@@ -34,21 +34,31 @@
                 <span class="header__icon">
                     <i class="fas fa-search"></i>
                 </span>
-                <span class="header__icon">
+                <input type="checkbox" id="header__friends-setting" checked="checked" />
+                <label for="header__friends-setting" class="header__icon">
                     <i class="fas fa-cog"></i>
                     <!--  <i class="fas fa-cog fa-5x"></i> size 5x  -->
-                </span>
+                </label>
+                <div class="header__settings">
+                    <span>Edit</span>
+                    <span>Sorting</span>
+                    <a href="settings.html">
+                        <span>General Setting</span>
+                    </a>
+                </div>
             </div>
         </header>
         <main class="friends">
             <header class="friends__header">
                 <div class="friends__friend friend">
                     <div class="friend__column">
-                        <img src="img/avatar1.jpg" class="g-avatar friend__avatar" />
-                        <div class="friend__content">
-                            <span class="friend__name">
-                                Juman
-                            </span>
+                        <img src="img/avatar8.jpg" class="g-avatar friend__avatar" />
+                        <div class="friend__text-box">
+                            <div class="friend__content">
+                                <span class="friend__name">
+                                    Juman
+                                </span>
+                            </div>
                             <span class="friend__status">
                                 kokoa clone v2 complete
                             </span>
@@ -80,13 +90,15 @@
                 <h5 class="friends__title">Friends 14</h5>
                 <li class="friends__friend friend">
                     <div class="friend__column">
-                        <img src="img/avatar1.jpg" class="friend__avatar" />
-                        <div class="friend__content">
-                            <span class="friend__name">
-                                Kevin
-                            </span>
+                        <img src="img/avatar3.jpg" class="friend__avatar" />
+                        <div class="friend__text-box">
+                            <div class="friend__content">
+                                <span class="friend__name">
+                                    Ariane
+                                </span>
+                            </div>
                             <span class="friend__status">
-                                Welcome to the Code Jungle!
+                                Keep going ~
                             </span>
                         </div>
                     </div>
@@ -99,6 +111,79 @@
                         </div>
                     </div>
                 </li>
+                <li class="friends__friend friend">
+                    <div class="friend__column">
+                        <img src="img/avatar4.jpg" class="friend__avatar" />
+                        <div class="friend__text-box">
+                            <div class="friend__content">
+                                <span class="friend__name">
+                                    Brian
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <a href="friend.html">
+                    <li class="friends__friend friend">                   
+                        <div class="friend__column">
+                            <img src="img/avatar2.jpg" class="friend__avatar" />
+                            <div class="friend__text-box">
+                                <div class="friend__content">
+                                    <span class="friend__name">
+                                        Corinne Kutz
+                                    </span>
+                                </div>
+                                <span class="friend__status">
+                                    Welcome to the Code Jungle!
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                </a>
+                <li class="friends__friend friend">
+                    <div class="friend__column">
+                        <img src="img/avatar6.jpg" class="friend__avatar" />
+                        <div class="friend__text-box">
+                            <div class="friend__content">
+                                <span class="friend__name">
+                                    Dylann Hendricks
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend__column">
+                        <div class="friend__now-listening">
+                            <span>
+                                Love On Top - Beyonce
+                                <i class="fas fa-play"></i>
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="friends__friend friend">
+                    <div class="friend__column">
+                        <img src="img/avatar7.jpg" class="friend__avatar" />
+                        <div class="friend__text-box">
+                            <div class="friend__content">
+                                <span class="friend__name">
+                                    Shawn Pang
+                                </span>
+                            </div>
+                            <span class="friend__status">
+                                Coding Complete!
+                            </span>
+                        </div>
+                    </div>
+                    <div class="friend__column">
+                        <div class="friend__now-listening">
+                            <span>
+                                Juice - Lizzo
+                                <i class="fas fa-play"></i>
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li id="blocking-box"></li>
             </ul>
         </main>
         <nav class="nav">
@@ -111,6 +196,7 @@
                 <li class="nav_list-item">
                     <a href="index.html" class="nav__list-link">
                         <i class="far fa-comment"></i>
+                        <div class="nav__badge">8</div>
                     </a>
                 </li>
                 <li class="nav_list-item">

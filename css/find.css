@@ -1,3 +1,7 @@
+.find .friend {
+    margin-bottom: 0;
+}
+
 .find .find__header-list {
     display: flex;
     justify-content: space-between;

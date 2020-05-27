@@ -9,10 +9,16 @@
 @import "more.css";
 @import "settings.css";
 @import "chat.css";
+@import "lg-friend.css";
 @import "mobile.css";
 
 * {
     box-sizing: border-box;
+    user-select: none;
+}
+
+::-webkit-scrollbar {
+    background: none;
 }
 
 body {

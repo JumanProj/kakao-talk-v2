@@ -6,6 +6,8 @@
 .settings__setting .settings__icon {
     font-size: 20px;
     margin-right: 20px;
+    width: 28px;
+    display: inline-block;
 }
 
 .settings__setting .settings__title {
@@ -15,6 +17,7 @@
 
 .settings .settings__setting {
     margin-bottom: 30px;
+    cursor: pointer;
 }
 
 .settings .settings__setting:last-child {

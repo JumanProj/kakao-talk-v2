@@ -1,0 +1,120 @@
+.lg-friend {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.438), rgba(83, 83, 83, 0)),
+        url("../img/friendBg.jpg");
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    z-index: -1;
+    opacity: 0;
+    animation: fadein 0.5s ease-in forwards;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.white {
+    color: white;
+}
+
+@keyframes slide {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.lg-friend__header {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 20px;
+    opacity: 0.6;
+    animation: slide 0.5s ease-in-out;
+}
+
+.lg-friend__header-column:last-child i {
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.lg-friend .lg-friend__avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 38%;
+    margin-top: 150px;
+    animation: slide 0.5s ease-in-out;
+}
+
+.lg-friend .friend__text-box {
+    align-items: center;
+    max-height: 100px;
+    animation: slide 0.5s ease-in-out;
+}
+
+.lg-friend .friend__name i {
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+.lg-friend .friend__status {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.lg-friend__btns {
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    padding: 5% 15%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    color: white;
+    border-top: 1px solid rgba(255, 255, 255, 0.363);
+    animation: slide 0.5s ease-in-out;
+}
+
+.lg-friend__btns-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.lg-friend__btns-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+}
+
+.lg-friend__btns-item span {
+    margin-top: 10px;
+    font-size: 12px;
+}

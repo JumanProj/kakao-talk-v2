@@ -5,6 +5,10 @@
     margin-bottom: 30px;
 }
 
+.header i {
+    opacity: 0.8;
+}
+
 .header .header__title {
     font-size: 24px;
     font-weight: 600;
@@ -24,4 +28,58 @@
 .header .header__back-btn {
     font-size: 22px;
     margin-right: 20px;
+}
+
+.header__settings > span {
+    cursor: pointer;
+}
+
+.header .header__settings {
+    height: 100px;
+    width: 150px;
+    background-color: rgb(252, 252, 252);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 90px;
+    right: 20px;
+
+    z-index: 1;
+    padding: 15px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    animation: toggleMotion 0.3s ease-in-out forwards;
+}
+
+.header #header__chats-setting {
+    display: none;
+    position: absolute;
+}
+.header #header__friends-setting {
+    display: none;
+    position: absolute;
+}
+
+#header__chats-setting:checked ~ .header__settings {
+    display: none;
+}
+#header__friends-setting:checked ~ .header__settings {
+    display: none;
+}
+
+@keyframes toggleMotion {
+    from {
+        opacity: 0;
+        transform-origin: right top;
+        transform: scale(0, 0);
+    }
+    to {
+        opacity: 1;
+        transform-origin: right top;
+        transform: scale(1, 1);
+        box-shadow: 0 2px 20px -4px rgba(0, 0, 0, 0.3);
+        border-radius: 4px;
+    }
 }
